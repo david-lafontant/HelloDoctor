@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
+git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
+
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0.8', '>= 7.0.8.1'
@@ -54,6 +56,12 @@ gem 'image_processing', '~> 1.2'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
+  gem 'pry'
+  gem 'rails_best_practices'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
+  gem 'rubocop', '>= 1.0', '< 2.0'
 end
 
 group :development do
@@ -66,3 +74,11 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem 'spring'
 end
+
+gem 'aws-sdk-s3', require: false
+gem 'cancancan', '~> 3.6', '>= 3.6.1'
+gem 'devise', '~> 4.9', '>= 4.9.4'
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
+gem 'poppler', '~> 4.2', '>= 4.2.4'
+gem 'sidekiq', '~> 7.3', '>= 7.3.5'
+gem 'streamio-ffmpeg', '~> 3.0', '>= 3.0.2'
