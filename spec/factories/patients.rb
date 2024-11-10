@@ -1,16 +1,16 @@
 FactoryBot.define do
   factory :patient do
-    first_name { "MyString" }
-    last_name { "MyString" }
-    birthdate { "2024-11-10" }
-    sex { 1 }
-    address_line1 { "MyString" }
-    address_line2 { "MyString" }
-    city { "MyString" }
-    state { "MyString" }
-    country { "MyString" }
-    phone { 1 }
-    email { "MyString" }
-    user { nil }
+    first_name { 'naomi' }
+    last_name { 'campbell' }
+    birthdate { '2024-11-10' }
+    sex { 'female' }
+    address_line1 { 'rue borno # 4' }
+    address_line2 { 'apt 4 rue paul' }
+    city { 'kolkat' }
+    state { 'geneva' }
+    country { 'USA' }
+    phone { '7898679063' }
+    email { 'patient@patient.com' }
+    user { User.first || association(:user) }
   end
 end
