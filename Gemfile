@@ -76,9 +76,9 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem 'spring'
 end
-
 gem 'aws-sdk-s3', require: false
 gem 'cancancan', '~> 3.6', '>= 3.6.1'
+gem 'city-state', '~> 0.0.13'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'poppler', '~> 4.2', '>= 4.2.4'
