@@ -54,7 +54,7 @@ RSpec.describe Patient, type: :model do
     end
 
     it 'when address_line1 is greater than 70 characters' do
-      patient.address_line1 = 'loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum'
+      patient.address_line1 = 'loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremips'
       expect(patient).not_to be_valid
     end
 
@@ -69,7 +69,7 @@ RSpec.describe Patient, type: :model do
     end
 
     it 'when address_line2 is greater than 70 characters' do
-      patient.address_line2 = 'loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum'
+      patient.address_line2 = 'loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumlo'
       expect(patient).not_to be_valid
     end
 
