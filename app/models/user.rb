@@ -8,6 +8,9 @@ class User < ApplicationRecord
   validates :email, :password, :role, presence: true
   validates :password, length: { in: 10..40 }
 
+  has_many :patients
+  validates_associated :patients
+
   after_initialize :set_default_role, if: :new_record?
 
   private
