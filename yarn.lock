@@ -340,6 +340,20 @@
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.1.3.tgz#4db480347775aeecd4dde2405659eef74a458881"
   integrity sha512-ojNvnoZtPN0pYvVFtlO7dyEN9Oml1B6IDM+whGKVak69MMYW99lC2NOWXWeE3bmwEydbP/nn6ERcpfjHVjYQjA==
 
+"@rails/actiontext@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@rails/actiontext/-/actiontext-8.0.0.tgz#01133b7bbb2eb541890bf3a8bdc761fc27f9a649"
+  integrity sha512-8pvXDEHqlVHptzfYDUXmBpstHsfHAVacYxO47cWDRjRmp1zdVXusLcom8UvqkRdTcAPXpte+LkjcfpD9S4DSSQ==
+  dependencies:
+    "@rails/activestorage" ">= 8.0.0-alpha"
+
+"@rails/activestorage@>= 8.0.0-alpha":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-8.0.0.tgz#be5dd10acc141b95ffa2b3026e61790c36f1679c"
+  integrity sha512-qoA7U1gMcWXhDnImwDIyRQDXkQKzThT2lu2Xpim8CnTOCEeAgkQ5Co2kzodpAI2grF1JSDvwXSPYNWwVAswndA==
+  dependencies:
+    spark-md5 "^3.0.1"
+
 "@sindresorhus/merge-streams@^2.1.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz#719df7fb41766bc143369eaa0dd56d8dc87c9958"
@@ -1975,6 +1989,11 @@ source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+spark-md5@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
+  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
+
 spdx-correct@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.2.0.tgz#4f5ab0668f0059e34f9c00dce331784a12de4e9c"
@@ -2190,6 +2209,11 @@ trim-newlines@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
+
+trix@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.8.tgz#b9383af8cd9c1a0a0818d6b4e0c9e771bf7fd564"
+  integrity sha512-y1h5mKQcjMsZDsUOqOgyIUfw+Z31u4Fe9JqXtKGUzIC7FM9cTpxZFFWxQggwXBo18ccIKYx1Fn9toVO5mCpn9g==
 
 trough@^1.0.0:
   version "1.0.5"
