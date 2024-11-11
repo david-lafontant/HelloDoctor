@@ -8,6 +8,9 @@ The Recipe app keeps track of patients record. Doctor and receptionist have rsep
 ![GIF](hello-doctor.png)
 ## Built With
 
+## Entity-relationship diagram
+[ERD](erd.pdf)
+
 
 - Ruby on Rails
 - Ruby
