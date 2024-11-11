@@ -1,3 +1,50 @@
 <div class="container">
   <h1 class="lead text-primary">This is the doctor page</h1>
+  <%= cache @patients do%>
+    <%= paginate @patients %>
+    <table  class="table">
+      <thead>
+        <tr>
+          <%= sortable_table_header 'First name', :first_name, :doctor_path, class: 'invoices__row--header' %>
+          <%= sortable_table_header 'Last name', :last_name, :doctor_path, class: 'invoices__row--header' %>
+          <%= sortable_table_header 'Sex', :sex, :doctor_path, class: 'invoices__row--header' %>
+          <%= sortable_table_header 'Created At', :created_at, :doctor_path, class: 'invoices__row--header' %>
+          <%= sortable_table_header 'Phone', :phone, :doctor_path, class: 'invoices__row--header' %>
+          <%= sortable_table_header 'Email', :email, :doctor_path, class: 'invoices__row--header' %>
+          <th scope="col">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @patients.each do |patient| %>
+          <%= cache patient do%>
+            <tr>
+              <td>
+                <%= patient.first_name %>
+              </td>
+              <td>
+                <%= patient.last_name %>
+              </td>
+              <td>
+                <%= patient.sex %>
+              </td>
+              <td>
+                <%= patient.created_at %>
+              </td>
+              <td>
+                <%= patient.phone %>
+              </td>
+              <td>
+                <%= patient.email %>
+              </td>
+              <td>
+                <%= link_to 'Details', patient_url(patient) %>
+              </td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
 </div>
