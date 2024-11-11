@@ -104,6 +104,8 @@ GEM
       cairo (>= 1.16.2)
       glib2 (= 4.2.4)
     cancancan (3.6.1)
+    chart-js-rails (0.1.7)
+      railties (> 3.1)
     city-state (0.0.13)
       rubyzip (~> 1.1)
     code_analyzer (0.5.5)
@@ -114,6 +116,8 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.4.0)
       railties (>= 6.0.0)
+    d3js-charts (1.1.1)
+      railties (>= 3.1)
     database_cleaner-active_record (2.2.0)
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
@@ -228,6 +232,7 @@ GEM
       racc
     pg (1.5.6)
     pkg-config (1.5.7)
+    plotly-rails-js (1.39.2)
     poppler (4.2.4)
       cairo-gobject (= 4.2.4)
       gio2 (= 4.2.4)
@@ -384,8 +389,10 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
   cancancan (~> 3.6, >= 3.6.1)
+  chart-js-rails
   city-state (~> 0.0.13)
   cssbundling-rails
+  d3js-charts (~> 1.1, >= 1.1.1)
   database_cleaner-active_record
   debug
   devise (~> 4.9, >= 4.9.4)
@@ -397,6 +404,7 @@ DEPENDENCIES
   jsbundling-rails
   kaminari (~> 1.2, >= 1.2.2)
   pg (~> 1.1)
+  plotly-rails-js
   poppler (~> 4.2, >= 4.2.4)
   pry
   puma (~> 5.0)
