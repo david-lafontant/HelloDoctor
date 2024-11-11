@@ -3,8 +3,6 @@ git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
-gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0.8', '>= 7.0.8.1'
 
@@ -62,6 +60,7 @@ group :development, :test do
   gem 'pry'
   gem 'rails_best_practices'
   gem 'rails-controller-testing'
+  gem 'rails-erd', '~> 1.5', '>= 1.5.2'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
   gem 'rubocop', '>= 1.0', '< 2.0'
 end
@@ -78,12 +77,8 @@ group :development do
 end
 gem 'aws-sdk-s3', require: false
 gem 'cancancan', '~> 3.6', '>= 3.6.1'
-gem 'chart-js-rails'
 gem 'city-state', '~> 0.0.13'
 gem 'd3js-charts', '~> 1.1', '>= 1.1.1'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
-gem 'plotly-rails-js'
-gem 'poppler', '~> 4.2', '>= 4.2.4'
-gem 'sidekiq', '~> 7.3', '>= 7.3.5'
 gem 'streamio-ffmpeg', '~> 3.0', '>= 3.0.2'
