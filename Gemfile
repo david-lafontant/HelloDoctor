@@ -60,6 +60,7 @@ group :development, :test do
   gem 'pry'
   gem 'rails_best_practices'
   gem 'rails-controller-testing'
+  gem 'rails-erd', '~> 1.5', '>= 1.5.2'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
   gem 'rubocop', '>= 1.0', '< 2.0'
 end
