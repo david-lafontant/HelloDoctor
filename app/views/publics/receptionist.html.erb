@@ -1,3 +1,56 @@
 <div class="container">
-  <h1 class="lead text-danger">This is the receptionist page</h1>
+  <h1>Receptionist</h1>
+  <%= cache @patients do%>
+    <%= paginate @patients %>
+    <table  class="table">
+      <thead>
+        <tr>
+          <th scope="col">
+            First name
+          </th>
+          <th scope="col">
+            Last name
+          </th>
+          <th scope="col">
+            Email
+          </th>
+          <th scope="col">
+            Phone
+          </th>
+          <th scope="col">
+            Date
+          </th>
+          <th scope="col">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @patients.each do |patient| %>
+          <%= cache patient do%>
+            <tr>
+              <td>
+                <%= patient.first_name%>
+              </td>
+              <td>
+                <%= patient.last_name%>
+              </td>
+              <td>
+                <%= patient.email%>
+              </td>
+              <td>
+                <%= patient.phone%>
+              </td>
+              <td>
+                <%= patient.created_at %>
+              </td>
+              <td>
+                <%= link_to 'Details', patient_url(patient) %>
+              </td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
 </div>
