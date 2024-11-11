@@ -1,8 +1,9 @@
 <div class="container">
-  <h1>New patient</h1>
+  <h1 class="lead">Create new patient</h1>
   <%= render "form", patient: @patient %>
   <br>
-  <div>
-    <%= link_to "Back to patients", patients_path, class: "btn btn-primary" %>
+  <hr>
+  <div class="mt-3">
+    <%= link_to 'Back', 'javascript:history.back()', class: "btn btn-primary" %>
   </div>
 </div>

@@ -1,14 +1,57 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Patients</h1>
-
-<div id="patients">
-  <% @patients.each do |patient| %>
-    <%= render patient %>
-    <p>
-      <%= link_to "Show this patient", patient %>
-    </p>
-  <% end %>
+<h1 class="lead">Patients</h1>
+<div class="mb-3">
+  <%= link_to "Add new patient", new_patient_path , class: "btn btn-primary" %>
 </div>
-
-<%= link_to "New patient", new_patient_path %>
+<%= cache @patients do%>
+  <%= paginate @patients %>
+  <table  class="table">
+    <thead>
+      <tr>
+        <th scope="col">
+          First name
+        </th>
+        <th scope="col">
+          Last name
+        </th>
+        <th scope="col">
+          Email
+        </th>
+        <th scope="col">
+          Phone
+        </th>
+        <th scope="col">
+          Date
+        </th>
+        <th scope="col">
+          Details
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @patients.each do |patient| %>
+        <%= cache patient do%>
+          <tr>
+            <td>
+              <%= patient.first_name%>
+            </td>
+            <td>
+              <%= patient.last_name%>
+            </td>
+            <td>
+              <%= patient.email%>
+            </td>
+            <td>
+              <%= patient.phone%>
+            </td>
+            <td>
+              <%= patient.created_at %>
+            </td>
+            <td>
+              <%= link_to 'Details', patient_url(patient) %>
+            </td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

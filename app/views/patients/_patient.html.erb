@@ -1,62 +1,57 @@
-<div id="<%= dom_id patient %>">
-  <p>
-    <strong>First name:</strong>
-    <%= patient.first_name %>
-  </p>
-
-  <p>
-    <strong>Last name:</strong>
-    <%= patient.last_name %>
-  </p>
-
-  <p>
-    <strong>Birthdate:</strong>
-    <%= patient.birthdate %>
-  </p>
-
-  <p>
-    <strong>Sex:</strong>
-    <%= patient.sex %>
-  </p>
-
-  <p>
-    <strong>Address line1:</strong>
-    <%= patient.address_line1 %>
-  </p>
-
-  <p>
-    <strong>Address line2:</strong>
-    <%= patient.address_line2 %>
-  </p>
-
-  <p>
-    <strong>City:</strong>
-    <%= patient.city %>
-  </p>
-
-  <p>
-    <strong>State:</strong>
-    <%= patient.state %>
-  </p>
-
-  <p>
-    <strong>Country:</strong>
-    <%= patient.country %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= patient.phone %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= patient.email %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= patient.user_id %>
-  </p>
-
+<div class="card" style="width: 18rem;" id="<%= dom_id patient %>">
+  <div class="card-body">
+    <h5 class="card-title"> <%= patient.first_name %>&nbsp;<%= patient.last_name %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Patient data</h6>
+    <p class="card-text">
+      <strong>First name:</strong>
+      <%= patient.first_name %>
+    </p>
+    <p class="card-text">
+      <strong>Last name:</strong>
+      <%= patient.last_name %>
+    </p>
+    <p class="card-text">
+      <strong>Phone:</strong>
+      <%= patient.phone %>
+    </p>
+    <p class="card-text">
+      <strong>Email:</strong>
+      <%= patient.email %>
+    </p>
+    <p class="card-text">
+      <strong>Birthdate:</strong>
+      <%= patient.birthdate %>
+    </p>
+    <p class="card-text">
+      <strong>Patient since:</strong>
+      <%= patient.created_at.strftime("%B %e, %Y")  %>
+    </p>
+    <p class="card-text">
+      <strong>Sex:</strong>
+      <%= patient.sex %>
+    </p>
+    <p class="card-text">
+      <strong>Address line1:</strong>
+      <%= patient.address_line1 %>
+    </p>
+    <p class="card-text">
+      <strong>Address line2:</strong>
+      <%= patient.address_line2 %>
+    </p>
+    <p class="card-text">
+      <strong>City:</strong>
+      <%= patient.city %>
+    </p>
+    <p class="card-text">
+      <strong>State:</strong>
+      <%= patient.state %>
+    </p>
+    <p class="card-text">
+      <strong>Country:</strong>
+      <%= patient.country %>
+    </p>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Back', 'javascript:history.back()', class: "btn btn-success" %>
+  </div>
 </div>
