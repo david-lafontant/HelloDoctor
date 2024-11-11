@@ -1,5 +1,6 @@
 class Patient < ApplicationRecord
   belongs_to :user
+  paginates_per 20
   enum sex: %i[female male].freeze
   validates :first_name, :last_name, :birthdate, :sex, :address_line1, :address_line2, :city,
             :state, :country, :phone, :email, :user_id, presence: true
