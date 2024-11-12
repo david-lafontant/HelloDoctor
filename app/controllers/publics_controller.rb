@@ -1,4 +1,5 @@
 class PublicsController < ApplicationController
+  skip_authorization_check
   def index; end
 
   def doctor
