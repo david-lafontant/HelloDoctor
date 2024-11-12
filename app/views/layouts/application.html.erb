@@ -12,8 +12,8 @@
     <% if current_user %>
       <%= render 'shared/header' %>
     <% end %>
-    <%= render 'shared/notification' %>
     <main class="container">
+      <%= render 'shared/notification' %>
       <%= yield %>
     </main>
     <% if current_user %>
