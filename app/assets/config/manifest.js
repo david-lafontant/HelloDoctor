@@ -1,3 +1,4 @@
 //= link_tree ../images
 //= link_tree ../builds
-//= require d3
+//= require Chart.bundle
+//= require chartkick
