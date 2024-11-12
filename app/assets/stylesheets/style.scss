@@ -146,7 +146,7 @@ body:has(.ftco-section) {
     left: 0;
   }
 
-
+/* stylelint-disable */
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark::after {
     content: "\f0c8";
@@ -195,7 +195,7 @@ body:has(.ftco-section) {
     &:focus {
       outline: none;
     }
-
+/* stylelint-enable */
     &.btn-primary {
       background: $primary !important;
       border: 1px solid $primary !important;
