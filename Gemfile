@@ -76,9 +76,10 @@ group :development do
 end
 gem 'aws-sdk-s3', require: false
 gem 'cancancan', '~> 3.6', '>= 3.6.1'
+gem 'chartkick', '~> 5.1', '>= 5.1.2'
 gem 'city-state', '~> 0.0.13'
-gem 'd3js-charts', '~> 1.1', '>= 1.1.1'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
+gem 'groupdate'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'streamio-ffmpeg', '~> 3.0', '>= 3.0.2'

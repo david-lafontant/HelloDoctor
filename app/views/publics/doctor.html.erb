@@ -1,5 +1,7 @@
 <div class="container">
   <h1 class="lead text-primary">This is the doctor page</h1>
+  <%= column_chart Patient.group_by_month(:created_at).count %>
+  <%= pie_chart Patient.group(:sex).count %>
   <%= turbo_frame_tag "patients" do %>
     <%= cache @patients do%>
       <%= paginate @patients %>
