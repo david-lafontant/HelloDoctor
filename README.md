@@ -1,16 +1,13 @@
 
 # Hello Doctor
 
-The Recipe app keeps track of patients record. Doctor and receptionist have rseparate dashboard. Receptionist have full CRUD operations over patients record. 
+The Recipe app keeps track of patients record. Doctor and receptionist have separate dashboard. Receptionist have full CRUD operations over patients record. 
 
 
 ## Screenshot
 ![GIF](hello-doctor.png)
+
 ## Built With
-
-## Entity-relationship diagram
-[ERD](erd.pdf)
-
 
 - Ruby on Rails
 - Ruby
@@ -21,6 +18,12 @@ The Recipe app keeps track of patients record. Doctor and receptionist have rsep
 - Rubocop
 - Rspec
 - OOP
+
+## Entity-relationship diagram
+[ERD](erd.pdf)
+
+## Live demo
+[Live demo](https://hello-doctor-948137178cb6.herokuapp.com/)
 
 ## Getting Started
 
