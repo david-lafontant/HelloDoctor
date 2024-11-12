@@ -2,6 +2,7 @@
 <div class="mb-3">
   <%= link_to "Add new patient", new_patient_path , class: "btn btn-primary" %>
 </div>
+<%= line_chart Patient.group_by_day(:created_at).count %>
 <%= cache @patients do%>
   <%= paginate @patients %>
   <table  class="table">
